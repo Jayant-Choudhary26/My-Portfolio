@@ -37,7 +37,7 @@ function initTheme() {
 /* Mobile Menu Navigation Toggle */
 function initMobileMenu() {
     const menuBtn = document.getElementById('mobile-menu-btn');
-    const navLinks = document.getElementById('nav-links');
+    const navLinks = document.getElementById('navigation-links');
 
     if (menuBtn && navLinks) {
         menuBtn.addEventListener('click', () => {
@@ -45,7 +45,7 @@ function initMobileMenu() {
         });
 
         // Close menu when clicking links
-        document.querySelectorAll('.nav-link').forEach(link => {
+        document.querySelectorAll('.navigation-link').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
